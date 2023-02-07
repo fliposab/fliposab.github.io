@@ -1,0 +1,102 @@
+@media only screen and (max-width: 800px) {
+    body{
+        margin-right: 10%;
+        margin-left: 10%;
+        background-color: rgb(24, 24, 24);
+        background-image: url(images/background.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #info{
+        left: 0%;
+        position: static;
+        margin-top: 10px;
+    }
+    
+    #mainTitle{
+        font-family: Arial Rounded MT Bold, Arial;
+        font-size: 3em;
+        margin-bottom: 0%;
+        text-shadow: .5em;
+        margin-top: 0px;
+    }
+    
+    #name{
+        margin-top: 10px;
+        font-size: 1.8em;
+        font-family: Arial Rounded MT Bold, Arial;
+        margin-bottom: 0.2em;
+    }
+    
+    #email{
+        font-weight: bold;
+        font-size: small;
+    }
+
+    .imgWDesc{
+        display: flex;
+        flex-direction: column;
+        width: 10em;
+        height: 10em;
+        background: transparent;
+        margin-bottom: 4em;
+    }
+    
+    
+    .showcaseCenter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0em;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    #godotImage{
+        text-align: center;
+        width: 20em;
+    }
+
+    .container{
+        margin-left: .5em;
+        margin-right: .5em;
+        margin-top: 15px;
+        padding-right: .2em;
+        padding-left: .2em;
+    }
+
+    .imgShowcase{
+        object-fit: fill;
+        width: 8.5em;
+        border-radius: 5%;
+        cursor: pointer;
+        display: block;
+    }
+
+    .animatedSprite2D{
+        width: 10em;
+        image-rendering: pixelated;
+    }
+
+    .mySlides,
+    .mySlides2{
+        display: none;
+        position: relative;
+        height: 35%;
+        top: 25%;
+        text-align: center;
+    }
+
+    .mySlides > img,
+    .mySlides2 > img{
+        height: 100%;
+        border-radius: 1em;
+    }
+
+}
