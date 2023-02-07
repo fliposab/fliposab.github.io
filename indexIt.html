@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Tommaso Vizzolin | Portfolio</title>
+        <meta name="author" content="Tommaso Vizzolin">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="mini.css">
+        <link rel="stylesheet" type="text/css" href="print.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="modal.js" type="text/javascript"></script>
+        <script src="modal2.js" type="text/javascript"></script>
+        <script src="hideshow.js" type="text/javascript"></script>
+
+        <meta charset="UTF-8">
+    </head>
+    <main>
+        <div id="language">
+            <a href="indexIt.html" class="selLang"><img src="ita.png" alt="Italiano" width="32" height="32"></a>
+            <a href="index.html" class="selLang"><img src="eng.png" alt="English" width="32" height="32"></a>
+        </div>
+        <div id="info">
+            <h1 id="mainTitle">Portfolio Modellatore 3D</h1>
+            <h1 id="name">Tommaso Vizzolin</h1>
+            <p id="email"><span id="mailEmoji">📧</span>: <a href= "mailto:tommvizz.14@outlook.com" target="_blank">tommvizz.14@outlook.com</a></p>
+        </div>
+        <!---->
+        <div id="description">
+            <h2>About Me</h2>
+            <p>Salve, il mio nome è Tommaso Vizzolin e ho 21 anni. Sono un appassionato di modellazione 3D e oltre
+                a saper utilizzare il software open source Blender, ho anche qualche familiarità con il motore di gioco Godot.<br>
+                Ho iniziato a utilizzare Blender verso il 2019-2020, e da allora ho imparato in maniera autonoma seguendo vari tutorial
+                che potevo trovare con i mezzi a mia disposizione. Punto a utilizzare i miei modelli in vari media, con una preferenza per i videogiochi.
+                Qui sotto potete trovare tutti i miei lavori.
+            </p>
+        </div>
+        <h2>I miei modelli originali</h2>
+        <p>Qui si possono trovare alcuni modelli originali create con il software Blender.</p>
+            <div class="showcase">
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal2();currentSlide2(1)">
+                        <img class="imgShowcase" src="images/scroof1.png" alt="Render personaggio originale">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Render</p>
+                </div>
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal2();currentSlide2(2)">
+                        <img class="imgShowcase" src="images/scrooftexture.png" alt="Render della texture">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Albedo</p>
+                </div>
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal2();currentSlide2(3)">
+                        <img class="imgShowcase" src="images/scroofwireframe.png" alt="Render del wireframe">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Wireframe</p>
+                </div>
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal2();currentSlide2(4)">
+                        <img class="imgShowcase" src="images/scroofshadows.png" alt="Render delle ombre">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Ombre</p>
+                </div>
+            </div>
+
+            <!-- Modal2 -->
+            <div id="myModal2" class="modal2">
+                <button class="close cursor2" onclick="closeModal()">&times;</button>
+                <div class="mySlides2">
+                    <img src="images/scroof1.png" alt="Render Finale">
+                    <p class="imgDescModal">Render Finale</p>
+                </div>
+                <div class="mySlides2">
+                    <img src="images/scrooftexture.png" alt="Texture Albedo">
+                    <p class="imgDescModal">Texture Albedo</p>
+                </div>
+                <div class="mySlides2">
+                    <img src="images/scroofwireframe.png" alt="Wireframe">
+                    <p class="imgDescModal">Wireframe</p>
+                </div>
+                <div class="mySlides2">
+                    <img src="images/scroofshadows.png" alt="Ombre">
+                    <p class="imgDescModal">Ombre</p>
+                </div>
+
+                <button class="prev" onclick="plusSlides2(-1)">&#10094;</button>
+                <button class="next" id="nextslide2" onclick="plusSlides2(1)">&#10095;</button>
+            </div>
+            <div id="hDesc">
+                <h3>Descrizione   <button id="showDesc" onclick="openDescription()"> &#x1F441; </button></h3>
+            </div>
+
+            <div id="Sdesc">
+                <p class="modelDesc">Questo modello è stato realizzato con lo scopo di trasformarlo in una pixel art.<br>
+                Il modello dunque è semplice, se messi troppi dettagli andrebbero persi nel render finale. La risoluzione della pixel art è 128x128px.<br>
+                Qui sotto i risultati:
+                </p>
+                <div class="showcaseCenter">
+                    <div class="imgWDesc">
+                        <img src="images/process1.png" alt="Immagine a risoluzione maggiore">
+                        <p class="imgDesc">Render iniziale</p>
+                    </div>
+                    <p class="arrow">&#10142;</p>
+                    <div class="imgWDesc">
+                        <img src="images/process2.png" alt="Immagine a risoluzione minore in pixel" class="animatedSprite2D">
+                        <p class="imgDesc">Render pixelato</p>
+                    </div>
+                    <p class="arrow">&#10142;</p>
+                    <div class="imgWDesc">
+                        <img src="images/scroofanim.gif" alt="Animazione in pixel" class="animatedSprite2D">
+                        <p class="imgDesc">Animazione</p>
+                    </div>
+                </div>
+                <p class="modelDesc">Per ottenere un buon effetto 2D, la telecamera è stata impostata con un FOV basso, e per evitare margini sfumati, è stato disattivato l'anti-aliasing.
+                    Infine tutti i frame sono stati lievemente modificati (soprattutto la faccia) per rendere i frame più simili tra loro.<br>
+                    Una volta fatto, tutti i frame sono stati esportati come file .png e importati su Godot, qui li ho raggruppati tutti nel nodo <i>AnimatedSprite</i> e avviato l'animazione.
+                </p>
+                <div class="showcaseCenter">
+                    <img src="images/godot.png" alt="Sprite 2D esportata su Godot" id="godotImage">
+                </div>
+            </div>
+
+            <h2 class="title2">Altri modelli</h2>
+            <p>Qui si possono trovare altri modelli che ho fatto sempre tramite Blender. Nessuno di questi modelli è stato usato a fine commerciale.</p>
+
+            <!-- Sailor Mercury-->
+
+            <h3>Sailor Mercury - Sailor Moon</h3>
+            <h4 class="copyright">Naoko Takeuchi/PNP, Toei Animation</h4>
+            <div class="showcase">
+                <button class="container" onclick="openModal();currentSlide(1)">
+                    <img class="imgShowcase" src="images/amimizuno1.png" alt="Sailor Mercury">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+                <button class="container" onclick="openModal();currentSlide(2)">
+                    <img class="imgShowcase" src="images/amimizuno2.png" alt="Sailor Mercury">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+            </div>
+            <div class="showcase">
+                <div class="imgWDescInk">
+                <button class="container" onclick="openModal();currentSlide(3)">
+                    <img class="imgShowcase" src="images/amiwireframe.png" alt="Wireframe del mdello">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+                <p class="imgDesc">Wireframe</p>
+                </div>
+                <div class="imgWDescInk">
+                <button class="container" onclick="openModal();currentSlide(4)">
+                    <img class="imgShowcase" src="images/amirig.png" alt="Rig del modello">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+                <p class="imgDesc">Rig</p>
+                </div>
+            </div>
+
+            <!--Inkling-->
+
+            <h3>Inkling Boy - Splatoon</h3>
+            <h4 class="copyright">Nintendo</h4>
+            <div class="showcase">
+                <button class="container" onclick="openModal();currentSlide(5)">
+                    <img class="imgShowcase" src="images/Inkling1.png" alt="Ragazzo Inkling render 1">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+                <button class="container" onclick="openModal();currentSlide(6)">
+                    <img class="imgShowcase" src="images/Inkling2.png" alt="Ragazzo Inkling render 2">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+                <button class="container" onclick="openModal();currentSlide(7)">
+                    <img class="imgShowcase" src="images/Inkling3.png" alt="Ragazzo Inkling render 3">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+            </div>
+
+            <div class="showcase">
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal();currentSlide(8)">
+                        <img class="imgShowcase" src="images/inklingwireframe.png" alt="Wireframe del modello">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Wireframe</p>
+                </div>
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal();currentSlide(9)">
+                        <img class="imgShowcase" src="images/inklingnormals.png" alt="Vettori normali del modello">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Normali</p>
+                </div>
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal();currentSlide(10)">
+                        <img class="imgShowcase" src="images/inklingtexture.png" alt="Texture del modello">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Albedo</p>
+                </div>
+            </div>
+
+            <!--Emboar-->
+
+            <h3>Emboar - Pokémon</h3>
+            <h4 class="copyright">2023 Pokémon. © 1995–2023 Nintendo/Creatures Inc./GAME FREAK inc.</h4>
+            <div class="showcase">
+                <button class="container" onclick="openModal();currentSlide(11)">
+                    <img class="imgShowcase" src="images/emboar1.png" alt="Emboar di fronte">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+                <button class="container" onclick="openModal();currentSlide(12)">
+                    <img class="imgShowcase" src="images/emboar2.png" alt="Emboar di lato">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+                <button class="container" onclick="openModal();currentSlide(13)">
+                    <img class="imgShowcase" src="images/emboar3.png" alt="Emboar da dietro">
+                    <div class="overlay">
+                        <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                    </div>
+                </button>
+            </div>
+            <div class="showcase">
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal();currentSlide(14)">
+                        <img class="imgShowcase" src="images/emboarwireframe.png" alt="Wireframe del modello">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Wireframe</p>
+                </div>
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal();currentSlide(15)">
+                        <img class="imgShowcase" src="images/emboaralbedo.png" alt="Texture del modello">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Albedo</p>
+                </div>
+                <div class="imgWDescInk">
+                    <button class="container" onclick="openModal();currentSlide(16)">
+                        <img class="imgShowcase" src="images/emboarrig.png" alt="Rig del modello">
+                        <div class="overlay">
+                            <img src="zoomlen.png" class="zoomlen" alt="Lente di ingrandimento">
+                        </div>
+                    </button>
+                    <p class="imgDesc">Rig</p>
+                </div>
+
+            </div>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <button class="close cursor" onclick="closeModal()">&times;</button>
+                <div class="mySlides">
+                    <img src="images/amimizuno1.png" alt="Sailor Mercury render 1">
+                    <p class="imgDescModal">Render Finale 1</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/amimizuno2.png" alt="Sailor Mercury render 2">
+                    <p class="imgDescModal">Render finale 2</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/amiwireframe.png" alt="Wireframe del modello">
+                    <p class="imgDescModal">Wireframe</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/amirig.png" alt="Rig del modello">
+                    <p class="imgDescModal">Rig</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/inkling1.png" alt="Ragazzo inkling render 1">
+                    <p class="imgDescModal">Render Finale 1</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/inkling2.png" alt="Ragazzo inkling render 2">
+                    <p class="imgDescModal">Render Finale 2</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/inkling3.png" alt="Ragazzo inkling render 3">
+                    <p class="imgDescModal">Render Finale 3</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/inklingwireframe.png" alt="Wireframe del modello">
+                    <p class="imgDescModal">Wireframe</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/inklingnormals.png" alt="Vettori normali del modello">
+                    <p class="imgDescModal">Normali</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/inklingtexture.png" alt="Texture albedo del modello">
+                    <p class="imgDescModal">Texture Albedo</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/emboar1.png" alt="Emboar render 1">
+                    <p class="imgDescModal">Render Finale 1</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/emboar2.png" alt="Emboar render 2">
+                    <p class="imgDescModal">Render Finale 2</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/emboar3.png" alt="Emboar render 3">
+                    <p class="imgDescModal">render Finale 3</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/emboarwireframe.png" alt="Wireframe del modello">
+                    <p class="imgDescModal">Wireframe</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/emboaralbedo.png" alt="Texture albedo del modello">
+                    <p class="imgDescModal">Texture Albedo</p>
+                </div>
+                <div class="mySlides">
+                    <img src="images/emboarrig.png" alt="Rig del modello">
+                    <p class="imgDescModal">Rig</p>
+                </div>
+
+                <!-- Nextprevious controls -->
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" id="nextslide"onclick="plusSlides(1)">&#10095;</button>
+  
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</html>
