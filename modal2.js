@@ -17,7 +17,6 @@ function currentSlide2(n) {
 }
   
 function showSlides2(n) {
-  document.getElementById("nextslide2").focus();
   var i;
   var slides = document.getElementsByClassName("mySlides2");
   var dots = document.getElementsByClassName("demo2");

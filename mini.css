@@ -2,8 +2,8 @@
     body{
         margin-right: 10%;
         margin-left: 10%;
-        background-color: rgb(24, 24, 24);
-        background-image: url(images/background.png);
+        background-color: rgb(10, 10, 10);
+        background-image: none;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -71,9 +71,18 @@
         padding-left: .2em;
     }
 
+    .showcase{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     .imgShowcase{
         object-fit: fill;
-        width: 8.5em;
+        width: 9.2em;
         border-radius: 5%;
         cursor: pointer;
         display: block;

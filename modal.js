@@ -23,7 +23,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  document.getElementById("nextslide").focus();
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
